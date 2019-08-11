@@ -1,6 +1,6 @@
 # Add the implementation every where you find a #to-do
 
-### EXERCISE 1
+### EXERCISE 1: write a function that removes all even numbers from an array
 def remove_even(numbers):
     l = numbers.copy()
     for i in l:
@@ -8,7 +8,7 @@ def remove_even(numbers):
             numbers.remove(i)
     return numbers
 
-### EXERCISE 2
+### EXERCISE 2: write a function that removes all odd numbers from an array
 def remove_odd(numbers):
     l = numbers.copy()
     for i in l:
