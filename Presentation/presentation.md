@@ -118,11 +118,16 @@ def my_function(parameter1, parameter2):
 
 ### Conditions
 
-- Logial Operators
+- Logical Operators
 - falsy ```None``` variables
 - special operators (```in``` - ```not``` - ```is```)
 
 ----
+
+#### User inputs
+
+----
+
 
 ### Classes
 
@@ -135,5 +140,12 @@ def my_function(parameter1, parameter2):
 
 ----
 
-#### helpful modules
+#### installing modules
 
+----
+
+#### using or starting modules
+
+----
+
+#### Exercises
