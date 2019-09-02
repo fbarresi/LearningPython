@@ -1,2 +1,2 @@
-# PythonExercises
-Repository of python exercices for beginners
+# LearningPython
+Repository for a Python presentation with training
