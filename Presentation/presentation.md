@@ -222,3 +222,5 @@ Python has a package manager ```pip``` for public (and privates) modules
 ----
 
 ### Exercises
+
+fork or download here: https://github.com/fbarresi/PythonExercises
