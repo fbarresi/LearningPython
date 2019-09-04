@@ -94,10 +94,64 @@ note: PyPy ist ein Just-in-Time-Compiler für die Programmiersprache Python, der
 
 ----
 
+### Conditions
+
+- Logical Operators
+- falsy ```None``` variables
+- special operators (```in``` - ```not``` - ```is```)
+
+----
+
+### Loops
+- the ```for``` loop
+- the ```while``` loop
+
+----
+
 ### Dictionaries
 - built-in complex object
 - naturally json structure
 ----
+#### Dictionary methods
+<font SIZE="3">
+
+<table>
+<thead><tr><td>Method</td><td>Description</td></tr></thead>
+<tr><td>clear()</td> <td>Remove all items form the dictionary</td></tr>
+<tr><td>copy()</td> <td>Return a shallow copy of the dictionary</td></tr>
+<tr><td>fromkeys(seq[,v])</td> <td>Return a new dictionary with keys from seq and value equal to v (defaults to None)</td></tr>
+<tr><td>get(key[,d])</td> <td>Return the value of key. If key doesnot exit, return d (defaults to None)</td></tr>
+<tr><td>items()</td> <td>	Return a new view of the dictionary's items (key, value)</td></tr>
+<tr><td>key()</td> <td>Return a new view of the dictionary's keys</td></tr>
+<tr><td>pop(key[,d])</td> <td>Remove the item with key and return its value or d if key is not found. If d is not provided and key is not found, raises KeyError</td></tr>
+<tr><td>popitem()</td> <td>Remove and return an arbitary item (key, value). Raises KeyError if the dictionary is empty</td></tr>
+<tr><td>setdefault(key[,d])</td> <td>If key is in the dictionary, return its value. If not, insert key with a value of d and return d (defaults to None)</td></tr>
+<tr><td>update([other])</td> <td>Update the dictionary with the key/value pairs from other, overwriting existing keys</td></tr>
+<tr><td>values()</td> <td>Return a new view of the dictionary's values</td></tr>
+</table>
+
+</font>
+
+
+----
+
+#### Dictionary build-in funcions
+<small>
+
+<table>
+<thead><tr><td>Method</td><td>Description</td></tr></thead>
+<tr><td>all()</td> <td>Return True if all keys of the dictionary are true (or if the dictionary is empty)</td></tr>
+<tr><td>any()</td> <td>Return True if any key of the dictionary is true. If the dictionary is empty, return False</td></tr>
+<tr><td>len()</td> <td>Return the length (the number of items) in the dictionary</td></tr>
+<tr><td>cmp()</td> <td>Compares items of two dictionaries</td></tr>
+<tr><td>sorted()</td> <td>	Return a new sorted list of keys in the dictionary</td></tr>
+</table>
+
+</small>
+
+----
+
+
 
 ### Functions
 ```python
@@ -109,22 +163,40 @@ def my_function(parameter1, parameter2):
 ```
 
 ----
+#### args und kwargs
+Python can map parameters from lists or dictionaries
+```python
+def test_var_args(f_arg, *argv):
+    print("first normal arg:", f_arg)
+    for arg in argv:
+        print("another arg through *argv:", arg)
 
-### Loops
-- the ```for``` loop
-- the ```while``` loop
+test_var_args('yasoob', 'python', 'eggs', 'test')
+```
+or
+```python
+def greet_me(**kwargs):
+    for key, value in kwargs.items():
+        print("{0} = {1}".format(key, value))
 
+>>> greet_me(name="yasoob")
+name = yasoob
+```
 ----
 
-### Conditions
+### User inputs (and casting)
 
-- Logical Operators
-- falsy ```None``` variables
-- special operators (```in``` - ```not``` - ```is```)
+```python
+test_text = input ("Enter a number: ")
 
-----
+test_number = int(test_text)
 
-#### User inputs
+if test_number % 2 == 0 :
+    print('the number you entered is even!')
+else:
+    print('the number you entered is odd!')
+
+```
 
 ----
 
@@ -138,14 +210,15 @@ def my_function(parameter1, parameter2):
 
 ### Module
 
+Modules (and submodules) in Python are easy folder with a ```__init__.py``` file.
+
+An ```import``` statement execute this file.
+
+
+<small>
+Python has a package manager ```pip``` for public (and privates) modules
+</small>
+
 ----
 
-#### installing modules
-
-----
-
-#### using or starting modules
-
-----
-
-#### Exercises
+### Exercises

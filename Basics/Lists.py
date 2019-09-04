@@ -13,3 +13,6 @@ list.append(12)
 list.append("dog")
 list.remove(False)
 print(list)
+
+#range can be defined with the function range
+print(range(10,2))
