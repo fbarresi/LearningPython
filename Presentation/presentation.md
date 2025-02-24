@@ -16,7 +16,7 @@ note:
 geboren aus dem Frust der Nutzung von ABC.
 
 ----
-# Leitfahden? 
+# Leitfaden? 
 Klar, immer dabei! 
 Ich muss sie nur importieren... 
 
